@@ -1,0 +1,14 @@
+use a one-way hashing algorithm, such as bcrypt or scrypt, to hash the password before storing it in the database
+
+encrypting isnt that important
+
+or have it hashed in the database (it sound better)
+
+connect to mysql server
+
+set up example data to test
+
+somehow get all movies in the databse
+
+maybe get the movies from a api
+

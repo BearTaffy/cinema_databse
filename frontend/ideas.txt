@@ -1,0 +1,27 @@
+shows the seats selected under text
+with a X to remove the seat
+
+if seats is available then it will be green
+if seats is not available then it will be red
+if seat is selected then it will be yellow
+
+add id to each seat
+
+id examples: LB-5, RA-7
+
+if you click on seat that is taken it will show alert
+
+if you click a selected seat again then it will be unselected
+
+add a sign in that will take you to the main page where you can see your tickets where you can cancel them or buy them
+
+
+idk how to handle when you need to reset password maybe ask for email first and last name
+
+add a movie rotation that will change every 30ish min
+
+when account is made send a alert on registration page
+
+add back buttons
+
+add other needed tables/fields to database
