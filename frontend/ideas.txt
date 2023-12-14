@@ -25,3 +25,5 @@ when account is made send a alert on registration page
 add back buttons
 
 add other needed tables/fields to database
+
+!! NEED TO MAKE A RESET PASSWORD PAGE !!

@@ -1,4 +1,24 @@
+import {useState} from "react";
+import {useNavigate} from 'react-router-dom';
+
 function SignIn() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+        if (email === '123@hotmail.com' && password === '123') {
+            setIsLoggedIn(true);
+        } else {
+            alert('Wrong email or password!');
+        }
+    }
+
+    if (isLoggedIn) {
+        navigate('/home');
+    }
+
     return (
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12">
             <div className="mx-auto w-full max-w-sm">
@@ -15,6 +35,8 @@ function SignIn() {
                         </label>
                         <div className="mt-2">
                             <input
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
                                 type="email"
                                 required
                                 className="block w-full rounded-md py-1.5 text-gray-900  ring-1 ring-gray-300 p-2"
@@ -30,6 +52,8 @@ function SignIn() {
                         </div>
                         <div className="mt-2">
                             <input
+                                value={password}
+                                onChange={e => setPassword(e.target.value)}
                                 type="password"
                                 required
                                 className="block w-full rounded-md py-1.5 text-gray-900  ring-1 ring-gray-300 p-2"
@@ -44,6 +68,7 @@ function SignIn() {
 
                     <div>
                         <button
+                            onClick={handleLogin}
                             type="submit"
                             className="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-700">
                             Sign in
@@ -57,6 +82,6 @@ function SignIn() {
             </div>
         </div>
     );
-};
+}
 
 export default SignIn;

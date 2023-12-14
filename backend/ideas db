@@ -2,13 +2,28 @@ use a one-way hashing algorithm, such as bcrypt or scrypt, to hash the password 
 
 encrypting isnt that important
 
-or have it hashed in the database (it sound better)
+or have it hashed in the database (it sounds better)
 
 connect to mysql server
 
 set up example data to test
 
-somehow get all movies in the databse
+somehow get all movies in the database
 
 maybe get the movies from a api
 
+get images from api using https://developer.themoviedb.org/docs/image-basics
+
+figure out how to store the needed data in the database
+
+make a file for every insert needed
+
+make a employee page where you can add movies and rooms and other stuff
+
+make a script that will auto make the seats for a room (60 L , 60 R) for the number of rooms in the database
+
+there are 5? rooms with different movies playing at different times and the movies rotate every (some timeframe) and maybe the rooms are different sizes (seat count)
+
+or chould just have one room and one movie in and in sertan timeframes other movies (Would make it easier)
+
+find a way to assign a seatID to each html element
